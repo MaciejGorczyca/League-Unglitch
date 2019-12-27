@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{68051946-FA49-45AB-A9EE-A9C61C1023EE}</ProjectGuid>
+    <ProjectGuid>{B66D15F3-1879-406A-B4C3-7B1D7A358065}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>League_Unglitch</RootNamespace>
     <AssemblyName>League Unglitch</AssemblyName>
