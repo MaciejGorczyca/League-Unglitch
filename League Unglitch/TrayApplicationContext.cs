@@ -52,19 +52,19 @@ namespace League_Unglitch
             base.OnLoad(e);
         }
 
-        private async void KillAndRestartUx(object sender, EventArgs e)
+        private void KillAndRestartUx(object sender, EventArgs e)
         {
-            await lc.Post("/riotclient/kill-and-restart-ux", "");
+            ExecutePost("/riotclient/kill-and-restart-ux");
         }
 
-        private async void KillUx(object sender, EventArgs e)
+        private void KillUx(object sender, EventArgs e)
         {
-            await lc.Post("/riotclient/kill-ux", "");
+            ExecutePost("/riotclient/kill-ux");
         }
 
-        private async void LaunchUx(object sender, EventArgs e)
+        private void LaunchUx(object sender, EventArgs e)
         {
-            await lc.Post("/riotclient/launch-ux", "");
+            ExecutePost("/riotclient/launch-ux");
         }
 
         private async void ExecutePost(String url)
@@ -73,7 +73,7 @@ namespace League_Unglitch
             {
                 await lc.Post(url, "");
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 ShowErrorMessage();
             }
