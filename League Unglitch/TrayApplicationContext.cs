@@ -30,7 +30,8 @@ namespace League_Unglitch
         {
             trayMenu = new ContextMenu();
 
-            trayMenu.MenuItems.Add("Reload UI (fixes bugs)", KillAndRestartUx);
+            trayMenu.MenuItems.Add("Reload UI (fix bugs) - built-in function method", KillAndRestartUx);
+            trayMenu.MenuItems.Add("Reload UI (fix bugs) - kill league process method", KillLeagueProcess);
             trayMenu.MenuItems.Add("Close UI (background mode)", KillUx);
             trayMenu.MenuItems.Add("Restore UI (quickly open League)", LaunchUx);
             trayMenu.MenuItems.Add("Exit", OnExit);
@@ -55,6 +56,11 @@ namespace League_Unglitch
         private void KillAndRestartUx(object sender, EventArgs e)
         {
             ExecutePost("/riotclient/kill-and-restart-ux");
+        }
+
+        private void KillLeagueProcess(object sender, EventArgs e)
+        {
+            EndProcessTree("LeagueClientUxRender.exe");
         }
 
         private void KillUx(object sender, EventArgs e)
