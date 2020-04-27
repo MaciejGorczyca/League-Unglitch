@@ -5,6 +5,10 @@ Fixes what Riot couldn't fix ;)
 ## Description
 Windows C# application using ALREADY EXISTING functionality to fix existing UI/graphical bugs and issues that prevent players from joining champion select, selecting runes, selecting champions, banning champions, making players dodge champion select etc.
 
+## Video preview (open in new tab)
+
+[![Watch the video](https://img.youtube.com/vi/R9Rqpw3WXO0/maxresdefault.jpg)](https://youtu.be/R9Rqpw3WXO0)
+
 ## Functionality
 - Reload UI (fix bugs) - built-in function method
 
